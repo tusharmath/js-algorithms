@@ -1,0 +1,22 @@
+{
+	"name": "js-algorithms",
+	"version": "0.0.0",
+	"homepage": "https://github.com/tusharmath/js-algorithms",
+	"bugs": "https://github.com/tusharmath/js-algorithms/issues",
+	"author": {
+		"name": "Tushar Mathur",
+		"email": "tusharmath@gmail.com",
+		"url": "http://tusharm.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tusharmath/js-algorithms"
+	},
+	"licenses": [{
+		"type": "MIT"
+	}],
+	"devDependencies": {
+		"mocha": "*",
+		"should": "*"
+	}
+}

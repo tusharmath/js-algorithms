@@ -1,0 +1,1 @@
+Just a simple repository of algorithms written in Coffeescript.
