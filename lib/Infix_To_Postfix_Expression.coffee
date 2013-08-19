@@ -1,34 +1,17 @@
-class Stack 
-	constructor: ->
-		@_stack = []
+Stack = require './Stack'
 
-	push: (num) ->
-		#console.log 'Push', @_stack, num
-		@_stack.push(num)
-
-	pop: ->
-		#console.log 'Pop', @_stack, @top()
-		@_stack.pop()
-
-
-	top: ->
-		#console.log @_stack
-		@_stack[@_stack.length-1]
-
-	isEmpty: ->		
-		@_stack.length is 0
-
-operators = ['+', '-' , '*' , '/' , '(' , ')']
+operators = ['+', '-' , '*' , '/' , '(' , ')' , '^']
 	
 precedence = (n,m) ->
 	precedence_key = 
 		'+' : 1
 		'-' : 1
 		'*' : 2
-		'/' : 3
-		'(' : -1
-		')'	: -2
-	return precedence_key[n] - precedence_key[m]
+		'/' : 2
+		'^' : 3
+	
+	return -1 if(n is m and n is '^')
+	precedence_key[n] - precedence_key[m]
 
 isOperator = (opr) ->
 	operators.indexOf(opr) > -1
