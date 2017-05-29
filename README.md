@@ -1,5 +1,7 @@
 #Data Structures and Algorithms in CoffeeScript
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tusharmath/js-algorithms.svg)](https://greenkeeper.io/)
+
 
 1. Run tests using mocha
 
